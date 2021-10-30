@@ -3,8 +3,11 @@
  * October 27th, 2021,
  * 
  * Functions made by Wesley McGinn (wesleymcginn1@gmail.com)
- * Free for any programmer to use.
+ * Free for any programmer to use, as long as it is copied along with the comments representing the beginning and the end of the trigonometric functions.
  */
+
+
+// Beginning of Wesley's Trigonometric Functions
 
 // Cosine:
 double Cos(double m) {
@@ -377,10 +380,36 @@ if (n == 360) { return 1.0; }
 
 // Sine:
 double Sin(double m) {
-  return cos(m+90); // "sin(x) = cos(x+90)" is a math fact.
+  return cos(m-90);
 }
 
 // Tangent:
 double Tan(double m) {
-  return (cos(m+90)/cos(m)); // "tan(x) = sin(x) / cos(x)" is a math fact, and "cos(x+90) = sin(x)" is as well.  Therefore, "tan(x) = cos(x+90) / sin(x)".
+  return (cos(m-90)/cos(m));
 }
+
+// Secant:
+double Sec(double m) {
+  return (1/cos(m));
+}
+
+// Cosecant:
+double Csc(double m) {
+  return (1/cos(m-90));
+}
+
+// Cotangent:
+double Sec(double m) {
+  return (cos(m)/cos(m-90));
+}
+
+// Radians:
+double pi = 3.14159265359;
+double coS(double m) { return Cos(m*(180/pi)); }
+double siN(double m) { return Sin(m*(180/pi)); }
+double taN(double m) { return Tan(m*(180/pi)); }
+double seC(double m) { return Sec(m*(180/pi)); }
+double csC(double m) { return Csc(m*(180/pi)); }
+double coT(double m) { return Cot(m*(180/pi)); }
+
+// End of Wesley's Trigonometric Functions
