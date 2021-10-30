@@ -4,7 +4,7 @@
 import math
 pi = 3.141592653589793
 Loop = -1
-while Loop < 360:
+while Loop <= 360:
   print("if (n == " + str(Loop) + ") { return " + str(math.cos((pi/180)*Loop)) + "; }")
   Loop += 1
 
