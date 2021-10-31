@@ -1,12 +1,25 @@
 # Program made by Wesley McGinn
 # Writes C++ Code in the Python Shell that can be copied and pasted into a sketch
 
+
 import math
 pi = 3.141592653589793
-Loop = -1
+
+# Initial Code:
+print("double Cos(double m) {") # Starts function creation
+print("  int n = round(m);") # Rounds input to the nearest degree
+print("  while (n > 360) { n -= 360; }") # Uses coterminal degree bewtween 0 and 360 (Brings value down)
+print("  while (n < 360) { n += 360; }") # Uses coterminal degree bewtween 0 and 360 (Brings value up)
+
+# Repeating Code (with value changes):
+Loop = 0
 while Loop <= 360:
-  print("if (n == " + str(Loop) + ") { return " + str(math.cos((pi/180)*Loop)) + "; }")
+  print("  if (n == " + str(Loop) + ") { return " + str(math.cos((pi/180)*Loop)) + "; }")
   Loop += 1
+
+# Ending Code:
+print("}")
+
 
 # Note:
 # cos(90) and cos(270) both should be zero.  However, because pi is irrational, the number will not be calculated exactly.
