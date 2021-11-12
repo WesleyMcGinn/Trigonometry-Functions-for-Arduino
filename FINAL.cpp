@@ -411,4 +411,121 @@ double seC(double m) { return Sec(m*(180/pi)); }
 double csC(double m) { return Csc(m*(180/pi)); }
 double coT(double m) { return Cot(m*(180/pi)); }
 
+
+// Inverse Trigonometry:
+
+// Inverse of Cosine (Output in degrees)
+double i_Cos(double m) {
+  double n = ((round(m*100))/(100));
+  if (n < -1) { return -180; }
+  if (n > 1) { return 180; }
+  if (n >= -1.01 && n <= -0.99) { return 180.0; }
+  if (n >= -0.99 && n <= -0.97) { return 168.52; }
+  if (n >= -0.97 && n <= -0.95) { return 163.74; }
+  if (n >= -0.95 && n <= -0.93) { return 160.05; }
+  if (n >= -0.93 && n <= -0.91) { return 156.93; }
+  if (n >= -0.91 && n <= -0.89) { return 154.16; }
+  if (n >= -0.89 && n <= -0.87) { return 151.64; }
+  if (n >= 0.29 && n <= 0.31) { return 72.54; }
+  if (n >= -0.87 && n <= -0.85) { return 149.32; }
+  if (n >= -0.85 && n <= -0.83) { return 147.14; }
+  if (n >= -0.83 && n <= -0.81) { return 145.08; }
+  if (n >= -0.81 && n <= -0.79) { return 143.13; }
+  if (n >= -0.79 && n <= -0.77) { return 141.26; }
+  if (n >= -0.77 && n <= -0.75) { return 139.46; }
+  if (n >= -0.75 && n <= -0.73) { return 137.73; }
+  if (n >= -0.73 && n <= -0.71) { return 136.05; }
+  if (n >= -0.71 && n <= -0.69) { return 134.43; }
+  if (n >= -0.69 && n <= -0.67) { return 132.84; }
+  if (n >= -0.67 && n <= -0.65) { return 131.3; }
+  if (n >= -0.65 && n <= -0.63) { return 129.79; }
+  if (n >= -0.63 && n <= -0.61) { return 128.32; }
+  if (n >= -0.61 && n <= -0.59) { return 126.87; }
+  if (n >= -0.59 && n <= -0.57) { return 125.45; }
+  if (n >= -0.57 && n <= -0.55) { return 124.06; }
+  if (n >= -0.55 && n <= -0.53) { return 122.68; }
+  if (n >= -0.53 && n <= -0.51) { return 121.33; }
+  if (n >= -0.51 && n <= -0.49) { return 120.0; }
+  if (n >= -0.49 && n <= -0.47) { return 118.69; }
+  if (n >= -0.47 && n <= -0.45) { return 117.39; }
+  if (n >= -0.45 && n <= -0.43) { return 116.1; }
+  if (n >= -0.43 && n <= -0.41) { return 114.83; }
+  if (n >= -0.41 && n <= -0.39) { return 113.58; }
+  if (n >= -0.39 && n <= -0.37) { return 112.33; }
+  if (n >= -0.37 && n <= -0.35) { return 111.1; }
+  if (n >= -0.35 && n <= -0.33) { return 109.88; }
+  if (n >= -0.33 && n <= -0.31) { return 108.66; }
+  if (n >= -0.31 && n <= -0.29) { return 107.46; }
+  if (n >= -0.29 && n <= -0.27) { return 106.26; }
+  if (n >= -0.27 && n <= -0.25) { return 105.07; }
+  if (n >= -0.25 && n <= -0.23) { return 103.89; }
+  if (n >= -0.23 && n <= -0.21) { return 102.71; }
+  if (n >= -0.21 && n <= -0.19) { return 101.54; }
+  if (n >= -0.19 && n <= -0.17) { return 100.37; }
+  if (n >= -0.17 && n <= -0.15) { return 99.21; }
+  if (n >= -0.15 && n <= -0.13) { return 98.05; }
+  if (n >= -0.13 && n <= -0.11) { return 96.89; }
+  if (n >= -0.11 && n <= -0.09) { return 95.74; }
+  if (n >= -0.09 && n <= -0.07) { return 94.59; }
+  if (n >= -0.07 && n <= -0.05) { return 93.44; }
+  if (n >= -0.05 && n <= -0.03) { return 92.29; }
+  if (n >= -0.03 && n <= -0.01) { return 91.15; }
+  if (n >= -0.01 && n <= 0.01) { return 90.0; }
+  if (n >= 0.01 && n <= 0.03) { return 88.85; }
+  if (n >= 0.03 && n <= 0.05) { return 87.71; }
+  if (n >= 0.05 && n <= 0.07) { return 86.56; }
+  if (n >= 0.07 && n <= 0.09) { return 85.41; }
+  if (n >= 0.09 && n <= 0.11) { return 84.26; }
+  if (n >= 0.11 && n <= 0.13) { return 83.11; }
+  if (n >= 0.13 && n <= 0.15) { return 81.95; }
+  if (n >= 0.15 && n <= 0.17) { return 80.79; }
+  if (n >= 0.17 && n <= 0.19) { return 79.63; }
+  if (n >= 0.19 && n <= 0.21) { return 78.46; }
+  if (n >= 0.21 && n <= 0.23) { return 77.29; }
+  if (n >= 0.23 && n <= 0.25) { return 76.11; }
+  if (n >= 0.25 && n <= 0.27) { return 74.93; }
+  if (n >= 0.27 && n <= 0.29) { return 73.74; }
+  if (n >= 0.29 && n <= 0.31) { return 72.54; }
+  if (n >= 0.31 && n <= 0.33) { return 71.34; }
+  if (n >= 0.33 && n <= 0.35) { return 70.12; }
+  if (n >= 0.35 && n <= 0.37) { return 68.9; }
+  if (n >= 0.37 && n <= 0.39) { return 67.67; }
+  if (n >= 0.39 && n <= 0.41) { return 66.42; }
+  if (n >= 0.41 && n <= 0.43) { return 65.17; }
+  if (n >= 0.43 && n <= 0.45) { return 63.9; }
+  if (n >= 0.45 && n <= 0.47) { return 62.61; }
+  if (n >= 0.47 && n <= 0.49) { return 61.31; }
+  if (n >= 0.49 && n <= 0.51) { return 60.0; }
+  if (n >= 0.51 && n <= 0.53) { return 58.67; }
+  if (n >= 0.53 && n <= 0.55) { return 57.32; }
+  if (n >= 0.55 && n <= 0.57) { return 55.94; }
+  if (n >= 0.57 && n <= 0.59) { return 54.55; }
+  if (n >= 0.59 && n <= 0.61) { return 53.13; }
+  if (n >= 0.61 && n <= 0.63) { return 51.68; }
+  if (n >= 0.63 && n <= 0.65) { return 50.21; }
+  if (n >= 0.65 && n <= 0.67) { return 48.7; }
+  if (n >= 0.67 && n <= 0.69) { return 47.16; }
+  if (n >= 0.69 && n <= 0.71) { return 45.57; }
+  if (n >= 0.71 && n <= 0.73) { return 43.95; }
+  if (n >= 0.73 && n <= 0.75) { return 42.27; }
+  if (n >= 0.75 && n <= 0.77) { return 40.54; }
+  if (n >= 0.77 && n <= 0.79) { return 38.74; }
+  if (n >= 0.79 && n <= 0.81) { return 36.87; }
+  if (n >= 0.81 && n <= 0.83) { return 34.92; }
+  if (n >= 0.83 && n <= 0.85) { return 32.86; }
+  if (n >= 0.85 && n <= 0.87) { return 30.68; }
+  if (n >= 0.87 && n <= 0.89) { return 28.36; }
+  if (n >= 0.89 && n <= 0.91) { return 25.84; }
+  if (n >= 0.91 && n <= 0.93) { return 23.07; }
+  if (n >= 0.93 && n <= 0.95) { return 19.95; }
+  if (n >= 0.95 && n <= 0.97) { return 16.26; }
+  if (n >= 0.97 && n <= 0.99) { return 11.48; }
+  if (n >= 0.99 && n <= 1.01) { return 0.0; }
+}
+
+// Inverse of sine:
+double i_Sin(double m) {
+  return (90-i_Cos(m));
+}
+
 // End of Wesley's Trigonometric Functions
