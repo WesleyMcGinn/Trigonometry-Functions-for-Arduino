@@ -730,4 +730,10 @@ double i_Tan(double m) {
   if (n > 48.5 && n <= 49.5) { return 88.831; }
 }
 
+// Inverses in Radians:
+double i_coS(double m) { return (i_Cos(m)*(pi/180)); }
+double i_siN(double m) { return (i_Sin(m)*(pi/180)); }
+double i_taN(double m) { return (i_Tan(m)*(pi/180)); }
+
+
 // End of Wesley's Trigonometric Functions
