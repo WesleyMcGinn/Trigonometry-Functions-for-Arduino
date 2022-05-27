@@ -1,7 +1,7 @@
 # Trigonometry-Functions-for-Arduino
 # NOTE: FINAL.CPP HAS NOT BEEN OFFICIALLY TESTED, YET.  IT SHOULD BE TESTED BY THIS SATURDAY.
 ## About:
-#### I noticed that it is sometimes very difficult or impossible to import a good trigonometry library into arduino.  I also noticed that the standard Arduino library's `sin()`, `cos()` and `tan()` do not work very well.  That is why I am making functions that you can copy and paste into your sketch that will allow you to get values from things such as `Cos(47)`, `Sin(272)`, or even `i_Cos(0.51)`.  I am using Python to generate some of the C++ code (so that I don't have to type out every trigonometric value for every degree) and then making that code usable.  In the future, I plan to make these functions into an Arduino Library that can be imported with a single line of code: `#include <WesTrigonometry.h>`
+#### Although some arduinos will quickly and easily calculate basic trigonometric functions, other arduinos may take an excessive amount of time to calculate or they may not be able to calculate trigonometry at all.  That is why I am making functions that you can copy and paste into your sketch that will allow you to get values from things such as `Cos(47)`, `Sin(272)`, or even `i_Cos(0.51)`.  I am using Python to generate some of the C++ code (so that I don't have to type out every trigonometric value for every degree) and then making that code usable.
 
 ## How to use:
 #### After copying and pasting the code from "FINAL.cpp" into your sketch, you can use the following syntaxes to get values:
