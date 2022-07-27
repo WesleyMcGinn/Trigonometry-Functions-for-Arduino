@@ -1,5 +1,5 @@
 # Trigonometry-Functions-for-Arduino
-# NOTE: FINAL.CPP HAS NOT BEEN OFFICIALLY TESTED, YET.  IT SHOULD BE TESTED BY THIS SATURDAY.
+
 ## About:
 #### Although some arduinos will quickly and easily calculate basic trigonometric functions, other arduinos may take an excessive amount of time to calculate or they may not be able to calculate trigonometry at all.  That is why I am making functions that you can copy and paste into your sketch that will allow you to get values from things such as `Cos(47)`, `Sin(272)`, or even `i_Cos(0.51)`.  I am using Python to generate some of the C++ code (so that I don't have to type out every trigonometric value for every degree) and then making that code usable.
 
